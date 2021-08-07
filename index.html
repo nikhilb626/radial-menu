@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background: #2c3e;
+        overflow: hidden;
+    }
+
+    .toggle{
+        background: skyblue;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+
+    .toggle i{
+        font-size: 60px;
+        color: white;
+        display: block;
+        margin-top: 20px;
+        transition: 0.7s;
+
+    }
+
+    .menu{
+        background: #fff;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        transform: scale(0);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+        border: 2px solid #e74c3c;
+        transition: 0.7s;
+    }
+
+    .menu a{
+        display: inline-block;
+        position: absolute;
+        font-size: 15px;
+        color: rgb(167, 163, 163);
+        transition: 0.4s;
+    }
+
+    .menu a:nth-child(1){
+        top: 6px;
+        left: 45px;
+    }
+    .menu a:nth-child(2){
+        top: 24px;
+        left: 77px;
+    }
+    .menu a:nth-child(3){
+        top: 58px;
+        left: 76px;
+    }
+    .menu a:nth-child(4){
+        top: 78px;
+        left: 45px;
+    }
+    .menu a:nth-child(5){
+        top: 58px;
+        left: 10px;
+    }
+    .menu a:nth-child(6){
+        top: 23px;
+        left: 12px;
+    }
+    .menu a:hover{
+        color: skyblue;
+    }
+
+    
+</style>
+<body>
+    <div class="toggle" id="toggle" onclick="expand()">
+        <i class="fas fa-plus" id="plus"></i>
+    </div>    
+
+    <div class="menu" id=menu>
+        <a href="#"><i class="fas fa-microphone"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-video"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-camera"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
